@@ -3,19 +3,38 @@ layout: page
 title: About Emerald
 ---
 ## About
-Emerald is a minimal theme created for Jekyll. The main purpose of Emerald is to provide a clear theme for those who want a blog ready to use, focused on the content and mobile-first.
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
-For further details on Emerald, please visit the [repository on Github](https://github.com/KingFelix/emerald/).
+Some of my projects
 
-![Emerald](img/Emerald01.png "Emerald")
+[YtConverter](https://anargya-anubhawa.github.io/ytconverter/ "YtConverter") |
+[Ytconventer Repo](https://github.com/anargya-anubhawa/ytconventer "Ytconventer")
 
-### Setup
-Emerald may be installed by simply downloading the .zip folder from the [repository on Github](https://github.com/KingFelix/emerald/archive/master.zip).
+[Hacker Terminal](https://anargya-anubhawa.github.io/hacker-terminal/ "Hacker Terminal") |
+[Hacker Terminal Repo](https://github.com/anargya-anubhawa/hacker-terminal "Hacker Terminal")
 
-After extracting the content from the folder into the selected directory, you can type ``jekyll serve`` from the terminal, than open your browser to ``0.0.0.0:4000/emerald/`` and you will find it there.
+# Github Stats Card
+![github stats](https://github-readme-stats.vercel.app/api?username=anargya-anubhawa)
 
-Additionally it is possible to fork the repository and use Github Pages as hosting. By following this way it will be enough to change the ``baseurl`` value into the ``_config.yml`` file, with the directory name of your project (for example /blog) or simply with a "/" (slash) if you want install Emerald in the root. 
+# Top Language Used in This Web
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=anargya-anubhawa)
 
-Last but not least: the [Jekyll documentation](http://jekyllrb.com) is the best starting point!
+## Links
 
-Enjoy!
+- [Repo](https://github.com/anargya-anubhawa/anargya-anubhawa.github.ii "Repo")
+- [Bugs](https://github.com/anargya-anubhawa/anargya-anubhawa.github.io/issue "Issues Page")
+
+## Author
+
+**Anargya Anubhawa**
+
+- [Profile](https://github.com/anargya-anubhawa "Anargya Prima Anubhawa")
+- [Email](anargyaprima2@gmail.com?subject=Hi  "Hi!")
+- [Saweria](https://saweria.co/AnargyaAnubhawa "Anargya Prima Anubhawa")
+- [Youtube](https://youtube.com/channel/UCYbCoNjc_H7gsrlLCUJ-1sg "Anargya Prima Anubhawa")
+
+## Support
+
+<a href="https://youtube.com/channel/UCYbCoNjc_H7gsrlLCUJ-1sg?sub_confirmation=1"><img alt="Youtube" title="Youtube" src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+
+Made with love. Anargya © 2020 - 2021.
