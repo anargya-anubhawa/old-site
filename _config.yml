@@ -26,8 +26,6 @@ defaults:
       layout: "post"
 
 # Plugins
-gems:
-  - jekyll-paginate
 gems: 
     - jekyll-sitemap
 
