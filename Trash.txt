@@ -1,4 +1,5 @@
-
+gems:
+  - jekyll-paginate
 Some of my projects
 
 [YtConverter](https://anargya-anubhawa.github.io/ytconverter/ "YtConverter") |
