@@ -2,9 +2,6 @@
 layout: page
 title: About
 ---
-## About
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-
 ## Top Language Used in This Web
 
 ![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=anargya-anubhawa)
