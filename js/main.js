@@ -39,3 +39,8 @@ function menuClick() {
 }
 
 menuClick();
+
+var test = document.getElementById('Test');
+function testJs(){
+  alert('ok')
+}
