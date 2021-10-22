@@ -1,7 +1,3 @@
-body{
-  background-color: white;
-  color:yellow;
-}
-.tag span{
-  color:#CE3DAE;
+#code{
+  border-radius: 15px;
 }
