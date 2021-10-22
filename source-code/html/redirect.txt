@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Redirecting</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv = "refresh" content = "4; url = https://anargya-anubhawa.github.io" />
+</head>
+<body>
+<h1 align="center">Redirecting to Anargya Website...</h1>
+<P>https://anargya-anubhawa.github.io</p>
+</body>
+</html>
