@@ -1,0 +1,117 @@
+<!--            MIT LICENSE
+
+Copyright (c) 2021 anargya-anubhawa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="author" content="Anargya Prima Anubhawa">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<title>Simple Editor</title>
+		<style type="text/css">
+	  	textarea{
+		      border: 2px solid #DDD;
+		      height: 50vw;
+          width: 100%;	  
+          font-size: 3vw;
+		}
+		  iframe {
+    			border: 2px solid #ddd;
+    			height: 50vw;
+    			width: 100%;	  
+			}
+			table{
+			}
+			#sourceCode{
+			   font-family: Consolas,'Courier New', monospace;
+			}
+			#btn{
+          background-color:#04AA6D;
+          color:white;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size:18px;
+          padding:6px 25px;
+          margin-top:4px;
+          border-radius:5px;
+          border:1px solid #04AA6D;
+}
+      #btn:hover {
+          background-color: #059862 !important;
+          color:white!important;
+			}
+    	</style>
+	</head>
+    <body>
+      <table>
+        <tr>
+        <td></td>
+        <td></td>
+          <td>
+  <input id="btn" onclick="runCode();" type="button" value="Run Code">
+  </td>
+  </tr>
+  </table>
+ <form>
+    <strong>Code</strong>
+  <textarea name="sourceCode" id="sourceCode">
+<html>
+  <head>
+   <title>Hello</title>
+   <style>
+   html{
+     font-size: 3vw;
+   }
+   p{
+   color: red;
+   font-family: monospace;
+   font-weight: bold;
+   }
+   </style>
+</head>
+  <body>
+   <h1>Hello!</h1>
+   <p>Write HTML, CSS or JavaScript code here and click 'Run Code'.</p>
+</body>
+</html>
+                        </textarea>
+                    </form>
+                    <strong>Output</strong><iframe style="font-size: 3vw;" name="targetCode" id="targetCode"></iframe></td>
+        <script type="text/javascript">
+            function runCode()
+            {
+              console.log("Run!");
+                var content = document.getElementById('sourceCode').value;
+                var iframe = document.getElementById('targetCode');
+                iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument;
+                iframe.document.open();
+                iframe.document.write(content);
+                iframe.document.close();
+                return false;
+            }
+            runCode();
+        </script>
+</body>
+</html>
