@@ -1,25 +1,81 @@
+---
+title: Redirect | Source Code
+---
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="/css/code">
-	<link href="https://{{cdn}}/prism@v1.x/themes/prism.css" rel="stylesheet" />
-	<title>Redirect Meta</title>
-</head>
+
+{% include head.html %}
+
 <body>
-  
-  <pre><code>&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-	...</code>
-	<code class="highlight">&lt;link href="themes/prism.css" rel="stylesheet" /></code>
-<code>&lt;/head>
-&lt;body>
-	...</code>
-	<code class="highlight">&lt;script src="prism.js">&lt;/script></code>
-<code>&lt;/body>
-&lt;/html></code></pre>
-  
-	<script src="https://{{cdn}}/prism@v1.x/components/prism-core.min.js"></script>
-	<script src="https://{{cdn}}/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+	<div id="wrap">
+	  	
+	  	<!-- Navigation -->
+	  	{% include menu.html %}
+    
+    <!-- Icon menu -->
+	  <a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
+	  	<div id="menu"></div>
+	  </a>
+
+      <!-- Header -->
+      {% if site.custom_header == true %}
+        {% include header-custom.html %}
+      {% else %}
+        {% include header.html %}
+      {% endif %}
+
+    <!-- Main content -->
+	  <div id="container">
+		  
+		<main>
+
+			        <pre><code>
+    function hello(){
+        console.log("hello world")
+    }
+        </code></pre>
+        <script>hljs.highlightAll();</script>
+
+	  </main>
+		
+		  <!-- Pagination links -->
+      {% if paginator.total_pages > 1 %}
+        <div class="pagination">
+          {% if paginator.previous_page == 1 %}
+            <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
+          {% elsif paginator.previous_page%}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
+          {% else %}
+            <span class="page-item">&laquo;</span>
+          {% endif %}
+        
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <span class="page-item">{{ page }}</span>
+            {% elsif page == 1 %}
+              <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">{{ page }}</a>
+            {% else %}
+              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
+            {% endif %}
+          {% endfor %}
+        
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&raquo;</a>
+          {% else %}
+            <span class="page-item">&raquo;</span>
+          {% endif %}
+        </div>
+        {% endif %}
+
+	  </div>
+	    
+	    <!-- Footer -->
+	    {% include footer.html %}
+
+	    <!-- Script -->
+      {% include script.html %}
+
+	</div>
 </body>
 </html>
