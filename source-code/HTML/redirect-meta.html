@@ -2,14 +2,24 @@
 <html>
 <head>
   <link rel="stylesheet" href="/css/code">
-	<link href="css/prism.css" rel="stylesheet" />
+	<link href="https://{{cdn}}/prism@v1.x/themes/prism.css" rel="stylesheet" />
+	<title>Redirect Meta</title>
 </head>
 <body>
-	<script src="../source-code/prism.js"></script>
-	<script src="../js/main.js"></script>
-	
-  <button onclick="testJs()">test js</button>
-<div>
-
+  
+  <pre><code>&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+	...</code>
+	<code class="highlight">&lt;link href="themes/prism.css" rel="stylesheet" /></code>
+<code>&lt;/head>
+&lt;body>
+	...</code>
+	<code class="highlight">&lt;script src="prism.js">&lt;/script></code>
+<code>&lt;/body>
+&lt;/html></code></pre>
+  
+	<script src="https://{{cdn}}/prism@v1.x/components/prism-core.min.js"></script>
+	<script src="https://{{cdn}}/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>
