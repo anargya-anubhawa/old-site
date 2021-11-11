@@ -1,11 +1,11 @@
 # Site settings
 title: Anargya Website
 description: "Build with Jekyll."
-url: "https://anargya-anubhawa.github.io"
+url: "https://anargya-anubhawa.github.io/"
 author:
   name: "Anargya Anubhawa"
   email: "anargya.anubhawa@gmail.com"
-  url: "https://anargya-anubhawa.github.io"
+  url: "https://anargya-anubhawa.github.io/"
 
 # Build settings
 baseurl: / #Change this to your relative path (ex: /blog/), or leave just a /
@@ -25,10 +25,6 @@ defaults:
     values:
       layout: "post"
 
-# Plugins
-gems: 
-    - jekyll-sitemap
-
 # Custom variables
 version: "1.0.0"
 
@@ -36,3 +32,10 @@ version: "1.0.0"
 custom_header: true
 custom_nav_footer: true
 reverse: false
+
+# Plugins
+gems: 
+    - jekyll-sitemap
+
+plugins:
+    - jekyll-sitemap
