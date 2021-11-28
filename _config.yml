@@ -36,8 +36,6 @@ reverse: false
 # Plugins
 gems: 
     - jekyll-sitemap
-    - jekyll-paginate
 
 plugins:
     - jekyll-sitemap
-    - jekyll-paginate
