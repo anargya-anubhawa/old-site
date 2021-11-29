@@ -8,7 +8,7 @@ author:
   url: "https://anargya-anubhawa.github.io/"
 
 # Build settings
-baseurl:  #Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: / #Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
@@ -37,6 +37,8 @@ reverse: false
 gems: 
     - jekyll-sitemap
     - jekyll-paginate
-
+    - jekyll-seo-tag
 plugins:
     - jekyll-sitemap
+    - jekyll-paginate
+    - jekyll-seo-tag

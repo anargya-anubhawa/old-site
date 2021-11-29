@@ -2,6 +2,11 @@ gems:
   - jekyll-paginate
 Some of my projects
 
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+
+canonical_url: 'https://your-canonical-url-here'
+ - jekyll-seo-tag
+
 [YtConverter](https://anargya-anubhawa.github.io/ytconverter/ "YtConverter") |
 [Ytconventer Repo](https://github.com/anargya-anubhawa/ytconventer "Ytconventer")
 
