@@ -37,6 +37,8 @@ reverse: false
 gems: 
     - jekyll-sitemap
     - jekyll-seo-tag
+    - jekyll-paginate
 plugins:
     - jekyll-sitemap
     - jekyll-seo-tag
+    - jekyll-paginate
