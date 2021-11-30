@@ -1,11 +1,11 @@
 # Site settings
 title: Anargya Website
 description: "Build with Jekyll."
-url: "https://anargya-anubhawa.github.io/"
+url: "https://anargya-anubhawa.github.io"
 author:
   name: "Anargya Anubhawa"
   email: "anargya.anubhawa@gmail.com"
-  url: "https://anargya-anubhawa.github.io/"
+  url: "https://anargya-anubhawa.github.io"
 
 # Build settings
 baseurl: / #Change this to your relative path (ex: /blog/), or leave just a /
@@ -13,7 +13,7 @@ markdown: kramdown
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 2
+paginate: 8
 paginate_path: /page:num/
 
 # Default values
@@ -26,7 +26,7 @@ defaults:
       layout: "post"
 
 # Custom variables
-version: "1.0.0"
+version: "1.0.1"
 
 # Options
 custom_header: true
