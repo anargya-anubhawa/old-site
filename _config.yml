@@ -14,7 +14,7 @@ source: .
 destination: ./_site
 paginate: 8
 paginate_path: /page:num/
-permalink: /:categories/:title/
+permalink: /:title/
 
 # Default values
 defaults:
