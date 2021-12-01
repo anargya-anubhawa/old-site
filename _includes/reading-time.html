@@ -1,5 +1,6 @@
+<div class="read-time">
+    <b><span class="fa fa-clock-o" aria-hidden="true"></span></b>
 <b>
-  <span class="fa fa-clock-o"></span>
 {% capture words %}
 {{ content | number_of_words | minus: 180 }}
 {% endcapture %}
@@ -7,3 +8,4 @@
 {{ words | plus: 150 | divided_by: 150 | append: ' Mins read' }}
 {% endunless %}
 </b>
+</div>
