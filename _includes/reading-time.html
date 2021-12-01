@@ -1,5 +1,6 @@
 <b>
-  <span class="fa fa-clock-o" aria-hidden="true"></span>{% capture words %}
+  <span class="fa fa-clock-o"></span>
+{% capture words %}
 {{ content | number_of_words | minus: 180 }}
 {% endcapture %}
 {% unless words contains '-' %}
