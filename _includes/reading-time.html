@@ -1,6 +1,6 @@
-{% capture words %}
+<span class="fa fa-clock-o" aria-hidden="true"></span>{% capture words %}
 {{ content | number_of_words | minus: 180 }}
 {% endcapture %}
 {% unless words contains '-' %}
-{{ words | plus: 150 | divided_by: 150 | append: ' minutes to read' }}
+{{ words | plus: 150 | divided_by: 150 | append: ' Mins read' }}
 {% endunless %}
