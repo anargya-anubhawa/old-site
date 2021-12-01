@@ -3,7 +3,7 @@ layout: default
 ---
 <article id="post-page">
    {% include post-categories.html %}
-   {% include reading-time.html %}
+   <span>{{ post.content | reading_time }}</span>
 	<h2>{{ page.title }}</h2>		
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
 	<div class="content">
