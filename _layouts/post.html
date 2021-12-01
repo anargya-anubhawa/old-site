@@ -2,8 +2,11 @@
 layout: default
 ---
 <article id="post-page">
-   {% include post-categories.html %}
-  {% include reading-time.html %}
+  <ul id="info-post">
+    <li><span class="fa fa-tags"></span>{% include post-categories.html %}</li>
+    <li><span class="fa fa-clock-o"></span>{% include reading-time.html %}</li>
+  </ul>
+  
   <hr>
 	<h2>{{ page.title }}</h2>		
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
