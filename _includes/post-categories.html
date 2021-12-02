@@ -1,11 +1,11 @@
-<div class="post-categories">
+<div class="by-line">
   {% if post %}
   {% assign categories = post.categories %}
   {% else %}
   {% assign categories = page.categories %}
   {% endif %}
   {% for category in categories %}
-  <b>Post Categories: </b><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  <p>Post Categories: </p><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
 </div>

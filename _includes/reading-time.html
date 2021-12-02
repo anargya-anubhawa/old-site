@@ -1,10 +1,8 @@
-<div class="read-time">
-<b>
+<div class="by-line">
 {% capture words %}
 {{ content | number_of_words | minus: 180 }}
 {% endcapture %}
 {% unless words contains '-' %}
 {{ words | plus: 150 | divided_by: 150 | append: ' Mins read' }}
 {% endunless %}
-</b>
 </div>

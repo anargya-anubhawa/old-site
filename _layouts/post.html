@@ -2,16 +2,13 @@
 layout: default
 ---
 <article id="post-page">
+  
   <ul style="list-style-type:none;" id="info-post">
-    <li><b class="post-meta"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        Published on: {{ page.date | date: date_format }}
-      </time></b></li>
-    <li>{% include post-categories.html %}</li>
-    <li>{% include reading-time.html %}</li>
+    <li>
   </ul>
   
 	<h2>{{ page.title }}</h2>		
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time><p>|</p>{% include post-categories.html %}<p>|</p>{% include reading-time.html %}
 	<div class="content">
 
 		{{ content }}
