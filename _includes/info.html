@@ -1,4 +1,4 @@
-<div class="by-line"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+<div class="by-line"><br><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }} - </time>
   {% if post %}
   {% assign categories = post.categories %}
   {% else %}
