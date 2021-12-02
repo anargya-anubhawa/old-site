@@ -3,11 +3,9 @@ layout: default
 ---
 <article id="post-page">
   <ul style="list-style-type:none;" id="info-post">
-    <li><p class="post-meta">
-    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    <li><b class="post-meta"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         Published on: {{ page.date | date: date_format }}
-      </time>
-  </p></li>
+      </time></b></li>
     <li>{% include post-categories.html %}</li>
     <li>{% include reading-time.html %}</li>
   </ul>
