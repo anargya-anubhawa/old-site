@@ -5,7 +5,7 @@ url: "https://anargya-anubhawa.github.io/"
 author:
   name: "Anargya Anubhawa"
   email: "anargya.anubhawa@gmail.com"
-  url: "https://anargya-anubhawa.github.io"
+  url: "https://anargya-anubhawa.github.io/"
 
 # Build settings
 baseurl: / #Change this to your relative path (ex: /blog/), or leave just a /
