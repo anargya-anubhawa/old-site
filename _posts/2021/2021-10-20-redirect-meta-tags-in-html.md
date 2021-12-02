@@ -14,7 +14,9 @@ categories: [Web]
   &lt;meta http-equiv="refresh" content="7; url='https://www.example.com'" />
   </code></pre>
 <p>Some old browsers don't refresh correctly when you add a quick link. In that case, you can add an anchor link to let the user follow.</p>
+
 > Some browsers don't render the &lt;meta> refresh tag correctly, so before the next page loads, the user can see a flash as a page.
+
 <h2>Full code example</h2>
 			        <pre><code id="code">
 &lt;!DOCTYPE html>
