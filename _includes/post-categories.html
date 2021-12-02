@@ -5,7 +5,7 @@
   {% assign categories = page.categories %}
   {% endif %}
   {% for category in categories %}
-  <p>Post Categories: </p><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}} - </a>
+  <p>Categories: </p><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a><span> - </span>
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}<!--This is a separator-->{% capture words %}
 {{ content | number_of_words | minus: 180 }}
