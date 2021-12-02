@@ -1,1 +1,16 @@
-<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time> {% include post-categories.html %}
+<div class="by-line"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+  {% if post %}
+  {% assign categories = post.categories %}
+  {% else %}
+  {% assign categories = page.categories %}
+  {% endif %}
+  {% for category in categories %}
+ <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a><span> - </span>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}<!--This is a separator-->{% capture words %}
+{{ content | number_of_words | minus: 180 }}
+{% endcapture %}
+{% unless words contains '-' %}
+{{ words | plus: 150 | divided_by: 150 | append: ' Mins read' }}
+{% endunless %}
+</div>
