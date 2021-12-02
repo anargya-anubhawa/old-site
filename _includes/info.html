@@ -1,1 +1,2 @@
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time><span class="by-line">|</span>{% include post-categories.html %}<span class="by-line">|</span>{% include reading-time.html %}
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
+	{% include post-categories.html %}{% include reading-time.html %}
