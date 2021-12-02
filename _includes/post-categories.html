@@ -7,5 +7,10 @@
   {% for category in categories %}
   <p>Post Categories: </p><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}} - </a>
   {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}
+  {% endfor %}<!--This is a separator-->{% capture words %}
+{{ content | number_of_words | minus: 180 }}
+{% endcapture %}
+{% unless words contains '-' %}
+{{ words | plus: 150 | divided_by: 150 | append: ' Mins read' }}
+{% endunless %}
 </div>
