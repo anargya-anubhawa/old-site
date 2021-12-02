@@ -3,7 +3,6 @@ layout: default
 ---
 <article id="post-page">
   <ul style="list-style-type:none;" id="info-post">
-    <li><p>Posted date: </p><time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time></li>
     <li>{% include post-categories.html %}</li>
     <li>{% include reading-time.html %}</li>
   </ul>

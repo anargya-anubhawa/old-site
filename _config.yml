@@ -15,7 +15,7 @@ destination: ./_site
 paginate: 8
 paginate_path: /page:num/
 permalink: /:title/
-
+timezone: Asia/Jakarta
 # Default values
 defaults:
   -
