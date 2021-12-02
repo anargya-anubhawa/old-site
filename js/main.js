@@ -44,3 +44,32 @@ var test = document.getElementById('Test');
 function testJs(){
   alert('ok')
 }
+
+function init() {
+
+    // DOM node
+    const btn = document.querySelector(".floating-btn");
+    
+    // handle window scroll
+    function handlScroll() {
+        if (window.pageYOffset > 300) {
+            btn.style.transform = "scale(1)";
+        } else {
+            btn.style.transform = "scale(0)";
+        }
+    }
+    
+    // attach scroll to window
+    window.addEventListener("scroll", handlScroll);
+    
+    // handle reset scroll
+    function scrollUp() {
+        window.scrollTo(0, 0);
+    }
+    
+    // reset window scroll
+    btn.addEventListener("click", scrollUp);
+}
+
+// invoke init when DOM loaded
+window.addEventListener("DOMContentLoaded", init);
