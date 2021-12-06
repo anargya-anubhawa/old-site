@@ -31,7 +31,7 @@
     margin-top: 0;
 }
 #c-submit {
-    background-color: #3fb6be;
+    background-color: $main-color;
     padding: 12px 45px;
     border-radius: 5px;
     cursor: pointer;
@@ -42,7 +42,7 @@
     font-weight: bold;
 }
 #c-submit:hover {
-    background-color: #43a09d;
+    background-color: #218F30;
 }
 #c-textarea {
     height: 100px;
