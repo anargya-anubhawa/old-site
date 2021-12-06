@@ -22,3 +22,46 @@
     justify-content: center;
     align-items: center;
 }
+#c-header {
+    text-align: center;
+    font-size:30px;
+}
+#c-form {
+    text-align: center;
+    margin-top: 0;
+}
+#c-submit {
+    background-color: #3fb6be;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+#c-submit:hover {
+    background-color: #43a09d;
+}
+#c-textarea {
+    height: 100px;
+}
+#c-input, #c-textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+.face {
+    transform: scale(0.4);
+    margin: 0 auto;
+    display: block;
+    margin-top: -35px;
+    margin-bottom: -25px;
+}
