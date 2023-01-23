@@ -12,7 +12,7 @@ baseurl: / #Change this to your relative path (ex: /blog/), or leave just a /.
 markdown: kramdown
 source: .
 destination: ./_site
-paginate: 8
+paginate: 5
 paginate_path: /page:num/
 permalink: /:title/
 timezone: Asia/Jakarta
@@ -26,7 +26,7 @@ defaults:
       layout: "post"
 
 # Custom variables
-version: "1.0.1"
+version: "2.0"
 
 # Options
 custom_header: true
