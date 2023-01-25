@@ -1,0 +1,11 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  aarch64-linux-android
+
+DEPENDENCIES
+
+BUNDLED WITH
+   2.4.5
