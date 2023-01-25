@@ -38,7 +38,9 @@ gems:
     - jekyll-sitemap
     - jekyll-seo-tag
     - jekyll-paginate
+    - jekyll-archives
 plugins:
     - jekyll-sitemap
     - jekyll-seo-tag
     - jekyll-paginate
+    - jekyll-archives
