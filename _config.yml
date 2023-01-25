@@ -33,6 +33,16 @@ custom_header: true
 custom_nav_footer: true
 reverse: false
 
+jekyll-archives:
+  enabled: [true]
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
 # Plugins
 gems: 
     - jekyll-sitemap
